@@ -10,7 +10,7 @@
 #import "LightDataSource.h"
 #import "LightDelegate.h"
 @interface ViewController : UIViewController<UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableVIew;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 //一定要声明成全局变量
 @property (nonatomic, strong) LightDataSource *dataSource;
 @property (nonatomic, strong) LightDelegate *delegate;

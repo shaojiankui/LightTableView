@@ -13,14 +13,12 @@
     return nil;
 }
 
-- (id)initWithItems:(NSArray *)anItems
-     cellIdentifier:(NSString *)aCellIdentifier
-          cellClass:(Class)aCellClass
- configureCellBlock:(void (^)(id cell, id item))aConfigureCellBlock
+- (id)initWithCellIdentifier:(NSString *)aCellIdentifier
+                   cellClass:(Class)aCellClass
+          configureCellBlock:(void (^)(id cell, id item))aConfigureCellBlock
 {
     self = [super init];
     if (self) {
-        _items = anItems;
         _cellIdentifier = aCellIdentifier;
         _configureCellBlock = [aConfigureCellBlock copy];
         _cellClass = aCellClass;
@@ -29,14 +27,12 @@
     return self;
 }
 
-- (id)initWithItems:(NSArray *)anItems
-     cellIdentifier:(NSString *)aCellIdentifier
+- (id)initWithCellIdentifier:(NSString *)aCellIdentifier
         cellNibName:(NSString*)nibname
  configureCellBlock:(void (^)(id cell, id item))aConfigureCellBlock{
 
     self = [super init];
     if (self) {
-        _items = anItems;
         _cellIdentifier = aCellIdentifier;
         _configureCellBlock = [aConfigureCellBlock copy];
         _cellClass = nil;
@@ -71,7 +67,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:_cellIdentifier
                                                             forIndexPath:indexPath];
     id item = _items[indexPath.row];
-    self.configureCellBlock(cell, item);
+    if (_configureCellBlock) {
+        _configureCellBlock(cell, item);
+    }
     return cell;
 }
 

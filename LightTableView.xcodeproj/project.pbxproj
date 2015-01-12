@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A28D0C181A635454000FA88B /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D0C121A635454000FA88B /* LightCell.m */; };
+		A28D0C191A635454000FA88B /* LightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A28D0C131A635454000FA88B /* LightCell.xib */; };
+		A28D0C1A1A635454000FA88B /* LightDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D0C151A635454000FA88B /* LightDataSource.m */; };
+		A28D0C1B1A635454000FA88B /* LightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A28D0C171A635454000FA88B /* LightDelegate.m */; };
 		A2CEC6491A1034F3000A08F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CEC6481A1034F3000A08F3 /* Foundation.framework */; };
 		A2CEC64B1A1034F3000A08F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CEC64A1A1034F3000A08F3 /* CoreGraphics.framework */; };
 		A2CEC64D1A1034F3000A08F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CEC64C1A1034F3000A08F3 /* UIKit.framework */; };
@@ -19,12 +23,8 @@
 		A2CEC66D1A1034F3000A08F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CEC64C1A1034F3000A08F3 /* UIKit.framework */; };
 		A2CEC6751A1034F3000A08F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2CEC6731A1034F3000A08F3 /* InfoPlist.strings */; };
 		A2CEC6771A1034F3000A08F3 /* LightTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CEC6761A1034F3000A08F3 /* LightTableViewTests.m */; };
-		A2CEC6941A103827000A08F3 /* LightDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CEC68D1A103827000A08F3 /* LightDataSource.m */; };
-		A2CEC6951A103827000A08F3 /* LightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CEC68F1A103827000A08F3 /* LightCell.m */; };
-		A2CEC6961A103827000A08F3 /* LightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CEC6901A103827000A08F3 /* LightCell.xib */; };
 		A2CEC6971A103827000A08F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CEC6921A103827000A08F3 /* ViewController.m */; };
 		A2CEC6981A103827000A08F3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CEC6931A103827000A08F3 /* ViewController.xib */; };
-		A2CEC69B1A1042DE000A08F3 /* LightDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CEC69A1A1042DE000A08F3 /* LightDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A28D0C111A635454000FA88B /* LightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightCell.h; sourceTree = "<group>"; };
+		A28D0C121A635454000FA88B /* LightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightCell.m; sourceTree = "<group>"; };
+		A28D0C131A635454000FA88B /* LightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightCell.xib; sourceTree = "<group>"; };
+		A28D0C141A635454000FA88B /* LightDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightDataSource.h; sourceTree = "<group>"; };
+		A28D0C151A635454000FA88B /* LightDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightDataSource.m; sourceTree = "<group>"; };
+		A28D0C161A635454000FA88B /* LightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightDelegate.h; sourceTree = "<group>"; };
+		A28D0C171A635454000FA88B /* LightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightDelegate.m; sourceTree = "<group>"; };
 		A2CEC6451A1034F3000A08F3 /* LightTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CEC6481A1034F3000A08F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2CEC64A1A1034F3000A08F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,16 +61,9 @@
 		A2CEC6721A1034F3000A08F3 /* LightTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		A2CEC6741A1034F3000A08F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2CEC6761A1034F3000A08F3 /* LightTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightTableViewTests.m; sourceTree = "<group>"; };
-		A2CEC68C1A103827000A08F3 /* LightDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightDataSource.h; sourceTree = "<group>"; };
-		A2CEC68D1A103827000A08F3 /* LightDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightDataSource.m; sourceTree = "<group>"; };
-		A2CEC68E1A103827000A08F3 /* LightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightCell.h; sourceTree = "<group>"; };
-		A2CEC68F1A103827000A08F3 /* LightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightCell.m; sourceTree = "<group>"; };
-		A2CEC6901A103827000A08F3 /* LightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightCell.xib; sourceTree = "<group>"; };
 		A2CEC6911A103827000A08F3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A2CEC6921A103827000A08F3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A2CEC6931A103827000A08F3 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		A2CEC6991A1042DE000A08F3 /* LightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightDelegate.h; sourceTree = "<group>"; };
-		A2CEC69A1A1042DE000A08F3 /* LightDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A28D0C101A635454000FA88B /* LightTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A28D0C111A635454000FA88B /* LightCell.h */,
+				A28D0C121A635454000FA88B /* LightCell.m */,
+				A28D0C131A635454000FA88B /* LightCell.xib */,
+				A28D0C141A635454000FA88B /* LightDataSource.h */,
+				A28D0C151A635454000FA88B /* LightDataSource.m */,
+				A28D0C161A635454000FA88B /* LightDelegate.h */,
+				A28D0C171A635454000FA88B /* LightDelegate.m */,
+			);
+			path = LightTableView;
+			sourceTree = "<group>";
+		};
 		A2CEC63C1A1034F3000A08F3 = {
 			isa = PBXGroup;
 			children = (
@@ -123,16 +137,10 @@
 		A2CEC64E1A1034F3000A08F3 /* LightTableView */ = {
 			isa = PBXGroup;
 			children = (
+				A28D0C101A635454000FA88B /* LightTableView */,
 				A2CEC6571A1034F3000A08F3 /* AppDelegate.h */,
 				A2CEC6581A1034F3000A08F3 /* AppDelegate.m */,
 				A2CEC6631A1034F3000A08F3 /* Images.xcassets */,
-				A2CEC68C1A103827000A08F3 /* LightDataSource.h */,
-				A2CEC68D1A103827000A08F3 /* LightDataSource.m */,
-				A2CEC6991A1042DE000A08F3 /* LightDelegate.h */,
-				A2CEC69A1A1042DE000A08F3 /* LightDelegate.m */,
-				A2CEC68E1A103827000A08F3 /* LightCell.h */,
-				A2CEC68F1A103827000A08F3 /* LightCell.m */,
-				A2CEC6901A103827000A08F3 /* LightCell.xib */,
 				A2CEC6911A103827000A08F3 /* ViewController.h */,
 				A2CEC6921A103827000A08F3 /* ViewController.m */,
 				A2CEC6931A103827000A08F3 /* ViewController.xib */,
@@ -247,8 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2CEC6531A1034F3000A08F3 /* InfoPlist.strings in Resources */,
-				A2CEC6961A103827000A08F3 /* LightCell.xib in Resources */,
 				A2CEC6981A103827000A08F3 /* ViewController.xib in Resources */,
+				A28D0C191A635454000FA88B /* LightCell.xib in Resources */,
 				A2CEC6641A1034F3000A08F3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,11 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CEC6941A103827000A08F3 /* LightDataSource.m in Sources */,
-				A2CEC69B1A1042DE000A08F3 /* LightDelegate.m in Sources */,
-				A2CEC6951A103827000A08F3 /* LightCell.m in Sources */,
 				A2CEC6591A1034F3000A08F3 /* AppDelegate.m in Sources */,
+				A28D0C1B1A635454000FA88B /* LightDelegate.m in Sources */,
 				A2CEC6551A1034F3000A08F3 /* main.m in Sources */,
+				A28D0C1A1A635454000FA88B /* LightDataSource.m in Sources */,
+				A28D0C181A635454000FA88B /* LightCell.m in Sources */,
 				A2CEC6971A103827000A08F3 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +478,7 @@
 				A2CEC67C1A1034F3000A08F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2CEC67D1A1034F3000A08F3 /* Build configuration list for PBXNativeTarget "LightTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +487,7 @@
 				A2CEC67F1A1034F3000A08F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
